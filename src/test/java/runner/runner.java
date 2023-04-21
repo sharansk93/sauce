@@ -6,7 +6,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith (Cucumber.class)
 @CucumberOptions(features="src/test/java/feature/sauce.feature",
-glue="com.stepdefinition",plugin="json:target/sauce.json")
+glue="com.stepdefinition",plugin={"json:target/sauce.json","html:target/sauce.html"})
 public class runner {
 
 }
